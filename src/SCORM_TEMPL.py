@@ -110,7 +110,7 @@ test_header = """
     </div>
     <div class="iDevice_inner">
         <div class="iDevice_content_wrapper">
-            <form name="quizForm0" id="quizForm0" action="javascript:calcScore2();">
+            <form name="quizForm0" id="quizForm0" action="javascript:calcScore();">
                 <input type="hidden" name="passrate" id="passrate-0" value="50" />
 """
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import codecs, shutil
+import codecs
 from SCORM_TEMPL import *
 
 class Pregunta:
