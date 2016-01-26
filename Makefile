@@ -4,4 +4,4 @@ run:
 	python src/main.py
 
 clean:
-	rm *~ *.pyc
+	rm -f *~ src/*~ src/*.pyc

@@ -127,9 +127,6 @@ templ_respuesta = """
                         
                         <div class="iDevice_answer">
                             <p class="iDevice_answer-field js-required">
-                                <label for="key$num_preguntab0$num_respuesta" class="" ="sr-av">
-                                    <a href="#answer-key$num_preguntab0$num_respuesta">Opción $num_respuesta</a>
-                                </label>
                                 <input type="radio" name="key$num_preguntab0" id="key$num_preguntab0$num_respuesta" value="$num_respuesta" /> 
                             </p>
                             <div class="iDevice_answer-content" id="answer-key0b0$n">
