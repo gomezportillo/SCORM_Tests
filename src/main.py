@@ -30,7 +30,7 @@ class Test:
 
 def generate_test(): #cambiar por la nueva configuracion
 
-    with codecs.open('test2.md', 'r', encoding='utf8') as f:
+    with codecs.open('in/test2.md', 'r', encoding='utf8') as f:
         test_file = f.readlines()
 
         title = test_file[0].split("=")[1][:-2]
@@ -60,7 +60,7 @@ def generate_test(): #cambiar por la nueva configuracion
                 pass
 
     #print unicode(mytest)
-    file_name = 'output_test_.html'
+    file_name = 'out/output_test_.html'
     with codecs.open(file_name, 'w+', encoding='utf8') as f:  
 
         #HEADER

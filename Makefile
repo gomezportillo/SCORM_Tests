@@ -1,7 +1,7 @@
 all: run
 
 run:
-	python main.py
+	python src/main.py
 
 clean:
 	rm *~ *.pyc
