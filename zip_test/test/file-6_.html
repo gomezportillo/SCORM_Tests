@@ -1,0 +1,63 @@
+<link rel="stylesheet" type="text/css" href="styles/style.css" /><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+</head>
+<body>
+<h1 id="introducción-a-ogre">Introducción a OGRE</h1>
+<span id="chapter-6."></span><p>OGRE es un motor orientado a objetos libre para aplicaciones gráficas 3D interactivas. El nombre del motor OGRE es un acrónimo de . Como su propio nombre indica, OGRE no es un motor para el desarrollo de videojuegos; se centra exclusivamente en la definición de un  para el renderizado de gráficos 3D en tiempo real.</p>
+<p>El desarrollo de OGRE se centra exclusivamente en la parte de despliegue gráfico. El motor no proporciona mecanismos para capturar la interacción del usuario, ni para reproducción audio o gestión del estado interno del videojuego.</p>
+<p><div class="hidra-image" id="S2ogre" >
+<img style="width: 50%" src="images/ogre.jpg">
+</div>
+<div class="hidra-image-title">Imagen 6.1: El logotipo de OGRE 3D es un OGRO</div>
+</p>
+<p>El proyecto de OGRE comenzó en el 2000 con el propósito de crear un motor gráfico bien diseñado. El líder del proyecto Steve Streeting define el desarrollo de OGRE como un proyecto basado en la calidad más que en la cantidad de características que soporta, porque la cantidad viene con el tiempo, y la calidad nunca puede añadirse a posteriori. La popularidad de OGRE se basa en los principios de meritocracia de los proyectos de software libre. Así, el sitio web de OGRE recibe más de 500.000 visitas diarias, con más de 40.000 descargas mensuales.</p>
+<p>El núcleo principal de desarrolladores en OGRE se mantiene deliberadamente pequeño y está formado por profesionales con dilatada experiencia en proyectos de ingeniería reales.</p>
+<p>La versión oficial de OGRE está desarrollada en C++ (el lenguaje estándar en el ámbito del desarrollo de videojuegos). La rama oficial de OGRE únicamente se centra en este lenguaje sobre los sistemas operativos GNU/Linux, Mac OS X y Microsoft Windows. No obstante, existen wrappers de la API a otros lenguajes (como Java, Python o C#) que son mantenidos por la comunidad de usuarios (presentando diferentes niveles de estabilidad y completitud), que no forman parte del núcleo oficial de la biblioteca.</p>
+<p>Algunas características destacables de OGRE son:</p>
+<p>Motor Multiplataforma. Aunque el desarrollo original de OGRE se realizó bajo plataformas Microsoft Windows, la distribución oficial ofrece versiones binarias para GNU/Linux y Mac OS X. Además, gracias al soporte nativo de OpenGL, es posible compilar la biblioteca en multitud de plataformas (como diversas versiones de Unix, además de algunos ports no oficiales para Xbox y dispositivos portátiles). OGRE soporta la utilización de las APIs de despliegue gráfico de bajo nivel OpenGL y Direct3D.</p>
+<p>Diseño de Alto Nivel. OGRE encapsula la complejidad de acceder directamente a las APIs de bajo nivel (como OpenGL y Direct3D) proporcionando métodos intuitivos para la manipulación de objetos y sus propiedades relacionadas. De este modo no es necesario gestionar manualmente la geometría o las matrices de transformación. Todos los objetos representables de la escena se abstraen en un interfaz que encapsula las operaciones necesarias para su despliegue (técnicas empleadas y composición).</p>
+<p>OGRE hace un uso de varios  para mejorar la usabilidad y la flexibilidad de la bibloteca. Por ejemplo, para informar a la aplicación sobre eventos y cambios de estado utiliza el patrón . El patrón  se emplea en gran número de  para forzar que únicamente exista una instancia de una clase. El patrón  se emplea para permitir operaciones sobre un objeto sin necesidad de modificarlo (como en el caso de los nodos del grafo de escena), el patrón  para unificar el acceso a operaciones,  para la creación de instancias concretas de interfaces abstractos, etc.</p>
+</body></html>

@@ -1,0 +1,153 @@
+.hidra-cover {
+    text-align: center;
+}
+
+#cover-image {
+    text-align: center;
+    height: 100%;
+}
+
+#cover-image img {
+    height: 100%;
+}
+
+.hidra-code-title {
+    margin: 0 auto;
+}
+
+
+.hidra-table-title p {
+    font-style: italic;
+    text-align: center;
+}
+
+
+.hidra-toc-header {
+    list-style-type: none;
+}
+
+.hidra-bib-title {
+    
+}
+
+.bibliography table{
+    width: 100%;
+}
+.bibliography table tbody tr td{
+    vertical-align: top;
+}
+
+
+.hidra-toc-title {
+
+}
+
+
+.hidra-image-title {
+    font-style: italic;
+    text-align: center;
+}
+
+
+.hidra-image {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+.hidra-image img {
+    width: 100%;
+}
+
+
+.hidra-img-in {
+    vertical-align: middle;
+    height: 1em;
+    display: inline-block;
+    width: 1em;
+}
+
+.hidra-img-in img {
+    height: 100%;
+    clear: right;
+    float: left;
+}
+
+
+.textbox {
+    display: table;
+    table-layout: fixed;
+    background-color: #D9D9D9;
+    border: 1px solid #3B3B3B;
+}
+
+.textbox .textbox-icon {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.textbox .textbox-icon img {
+    width: 50%;
+}
+
+.textbox .textbox-text {
+    display: table-cell;
+    text-align: justify;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+.hidra-eq-wrapper {
+    text-align: center;
+}
+
+.hidra-eq-formula {
+    display:inline-block;
+    text-align: center;
+    vertical-align:middle;
+}
+
+.hidra-eq-ref {
+    display:inline-block;
+    vertical-align:middle;
+    margin-left:25%;
+}
+
+
+.hidra-toc-header {
+    
+}
+
+
+.hidra-table {
+    text-align: center;
+    margin: auto;
+}
+
+.hidra-table table {
+    width: 100%;
+}
+
+
+.textbox {
+    background-color: #D9D9D9;
+    border: 1px solid #3B3B3B;
+}
+
+.textbox .textbox-icon {
+    text-align: center;
+}
+
+.textbox .textbox-text {
+    text-align: justify;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+}
+
+.hidra-equation {
+    margin: 0 auto;
+}
+
+

@@ -1,0 +1,106 @@
+/* Imágenes utilizadas */
+/* my_logo.jpg - Imagen de la cabecera de los documentos exportados como Página sola */
+/* my_list.gif - Sustituye al punto de las listas no numeradas introducidas desde eXeLearning  */
+/* my_ims_header.jpg - Imagen de fondo para el título de cada página en los IMS y en los documentos exportados como Página sola */
+/* my_header.jpg - Imagen de la cabecera de los documentos exportados como Sitio web */
+/* Los iconos de los iDevices también se controlan mediante CSS (ver iDevice icons) */ 
+
+/* Colores */
+
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+ span.kw { color: #007020; font-weight: bold; } /* Keyword */
+ span.dt { color: #902000; } /* DataType */
+ span.dv { color: #40a070; } /* DecVal */
+ span.bn { color: #40a070; } /* BaseN */
+ span.fl { color: #40a070; } /* Float */
+ span.ch { color: #4070a0; } /* Char */
+ span.st { color: #4070a0; } /* String */
+ span.co { color: #60a0b0; font-style: italic; } /* Comment */
+ span.ot { color: #007020; } /* Other */
+ span.al { color: #ff0000; font-weight: bold; } /* Alert */
+ span.fu { color: #06287e; } /* Function */
+ span.er { color: #ff0000; font-weight: bold; } /* Error */
+ span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+ span.cn { color: #880000; } /* Constant */
+ span.sc { color: #4070a0; } /* SpecialChar */
+ span.vs { color: #4070a0; } /* VerbatimString */
+ span.ss { color: #bb6688; } /* SpecialString */
+ span.im { } /* Import */
+ span.va { color: #19177c; } /* Variable */
+ span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+ span.op { color: #666666; } /* Operator */
+ span.bu { } /* BuiltIn */
+ span.ex { } /* Extension */
+ span.pp { color: #bc7a00; } /* Preprocessor */
+ span.at { color: #7d9029; } /* Attribute */
+ span.do { color: #ba2121; font-style: italic; } /* Documentation */
+ span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+ span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+ span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+
+.iDeviceTitle{
+	color: #8A5F31; /* Títulos de los iDevices */
+}
+.iDevice_inner{
+	background-color:#FAF8F2; /* Fondo del cuerpo del iDevice */
+	color:#4d4d4d; /* Texto de los iDevices */
+	border-color:#EBE3CC; /* Borde del cuerpo de los iDevices */
+}
+#siteFooter{
+	color:#666666; /* Texto del pie de página */
+}
+#siteFooter a{
+	color:#8A5F31; /* Enlaces del pie de página */
+}
+input.feedbackbutton{
+	background-color: #DBE992; /* Color de fondo del botón de feedback */
+}
+
+/* Otras definiciones */
+
+.iDevice{margin:10px 0 20px 0}
+.iDeviceTitle{font-size:1.2em;vertical-align:bottom;top:auto} 
+#main .iDeviceTitle{display:inline;font-size:1.2em}
+
+/* iDevice icons */
+.iDevice_icon{width:30px;height:auto;margin-right:5px} /* Legacy: old iDevices */
+.iDevice_header{background-image:url(icon_generic.gif);padding:5px 0 5px 37px;margin-bottom:5px}
+.activityIdevice .iDevice_header{background-image:url(icon_activity.gif)}
+.readingIdevice .iDevice_header{background-image:url(icon_reading.gif);padding-left:41px}
+.ListaIdevice .iDevice_header,
+.QuizTestIdevice .iDevice_header,
+.MultichoiceIdevice .iDevice_header,
+.TrueFalseIdevice .iDevice_header,
+.MultiSelectIdevice .iDevice_header,
+.ClozeIdevice .iDevice_header{background-image:url(icon_question.gif)}
+.CasestudyIdevice .iDevice_header{background-image:url(icon_casestudy.gif)}
+.preknowledgeIdevice .iDevice_header{background-image:url(icon_preknowledge.gif);padding-left:39px}
+.GalleryIdevice .iDevice_header{background-image:url(icon_gallery.gif)}
+.objectivesIdevice .iDevice_header{background-image:url(icon_objectives.gif)}
+.ReflectionIdevice .iDevice_header{background-image:url(icon_reflection.gif)}
+
+.iDevice_inner{padding: 10px 20px;border-width:1px 0 1px 0;border-style:dotted}
+.iDevice_content:before,.iDevice_content:after{content:"";display:table}
+.iDevice_content:after{clear:both}
+.iDevice_content{*zoom:1}/* IE6/7: Trigger hasLayout and contain floats */
+
+/* base.css */
+.block,.feedback{padding:0}
+.feedback{font-family:Arial,Verdana,Helvetica,sans-serif;font-size:1em}
+li{list-style-position:outside}
+
+/* Hide/Show iDevice */
+.toggle-idevice{display:block;margin:0;text-align:right}
+.iDevice_header .toggle-idevice{float:right;padding-top:2px;margin:0}
+.toggle-idevice a{display:inline-block;width:16px;height:16px;background:url(my_hide_show.png) no-repeat 0 -16px}
+.toggle-idevice .show-idevice{background-position:0 0}
+.toggle-idevice span{position:absolute;overflow:hidden;clip:rect(0,0,0,0);height:0}
+
+/* To review */
+.TrueFalseIdevice .question{margin-bottom:25px}
+.TrueFalseIdevice .question:last-child{margin-bottom:0}

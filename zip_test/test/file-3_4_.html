@@ -1,0 +1,73 @@
+<link rel="stylesheet" type="text/css" href="styles/style.css" /><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+</head>
+<body>
+<h2 id="proyección-en-perspectiva">Proyección en Perspectiva</h2>
+<span id="chapter-3.4."></span><p><div class="hidra-image" id="S1texturas" >
+<img style="width: 50%" src="images/texturas.jpg">
+</div>
+<div class="hidra-image-title">Imagen 3.5: Representacion del resultado de las principales etapas del Pipeline de Rasterizacion</div>
+</p>
+<p>En gráficos por computador es posible elegir entre diferentes modelos de proyección de los objetos sobre el plano de visualización. Un modo muy utilizado en aplicaciones de CAD es la proyección de los objetos empleando líneas paralelas sobre el plano de proyección, mediante la denominada proyección paralela. En este modo de proyección se conservan las proporciones relativas entre objetos, independientemente de su distancia.</p>
+<p>Mediante la proyección en perspectiva se proyectan los puntos hasta el plano de visualización empleando trayectorias convergentes en un punto. Esto hace que los objetos situados más distantes del plano de visualización aparezcan más pequeños en la imagen. Las escenas generadas utilizando este modelo de proyección son más realistas, ya que ésta es la manera en que el ojo humano y las cámaras físicas forman imágenes.</p>
+<p>En la proyección en perspectiva, las líneas paralelas convergen en un punto, de forma que los objetos más cercanos se muestran de un tamaño mayor que los lejanos. Desde el 500aC, los griegos estudia-ron el fenómeno que ocurría cuando la luz pasaba a través de pequeñas aberturas. La primera descripción de una cámara estenopeica se atribuye al atrónomo y matemático holandés  que en 1545 publicó la primera descripción de una  en la observación de un eclipse solar. En las cámaras esteneopeicas la luz pasa a través de un pequeño agujero para formar la imagen en la película fotosensible, que aparece invertida. Para que la imagen sea nítida, la abertura debe ser muy pequeña.</p>
+<p>Siguiendo la misma idea y desplazando el plano de proyección delante del origen, tenemos el modelo general proyección en perspectiva.</p>
+<p><div class="hidra-image" id="S1perspectiva" >
+<img style="width: 50%" src="images/perspectiva.jpg">
+</div>
+<div class="hidra-image-title">Imagen 3.6: Modelo de proyeccion en  perspectiva simple</div>
+</p>
+<p>Empleando triángulos semejantes obtenemos las siguientes coordenadas:</p>
+<p><a name="eq"></a>
+<div class="hidra-eq-wrapper">
+    <div class="hidra-eq-formula">
+ <br /><span class="math display"><img src="images/eq225a3cd9-02f4-462b-bfe2-0e8e72bde2e7.png"></span><br /> <br /><span class="math display"><img src="images/eq8d586ce3-5a62-4770-a104-0c82819036e1.png"></span><br />     </div>
+    <div class="hidra-eq-ref">
+        Ecuación 3.1
+    </div>
+</div>
+</p>
+</body></html>

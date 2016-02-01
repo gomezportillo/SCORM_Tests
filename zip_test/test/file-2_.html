@@ -1,0 +1,85 @@
+<link rel="stylesheet" type="text/css" href="styles/style.css" /><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+</head>
+<body>
+<h1 id="introducción">Introducción</h1>
+<span id="chapter-2."></span><p>Uno de los aspectos que más llaman la atención en los videojuegos actuales son sus impactantes gráficos 3D. En este primer capítulo introduciremos los conceptos básicos asociados al pipeline en gráficos 3D. Se estudiarán las diferentes etapas de transformación de la geometría hasta su despliegue final en coordenadas de pantalla. En la segunda parte del capítulo estudiaremos algunas de las capacidades básicas del motor gráfico de videojuegos y veremos los primeros ejemplos básicos de uso de Ogre.</p>
+<p><div class="textbox">
+    <div class="textbox-icon">
+        <img src="images/warning.png" />
+    </div>
+    <div class="textbox-text">
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis lorem mi. In varius felis nunc, a porttitor tellus aliquam vel. Nulla pellentesque commodo mi id blandit. Duis pellentesque risus massa, eget congue orci dapibus sit amet. Nunc finibus turpis elit. Suspendisse potenti. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi hendrerit posuere iaculis. Cras mattis semper tristique. Curabitur dapibus auctor feugiat. Ut volutpat commodo leo, id dictum metus vehicula sed. Duis lacinia augue tristique, ullamcorper diam in, blandit ante.         </p>
+    </div>
+</div>
+</p>
+<p>Desde el punto de vista <span class="hidra-img-in"><img src="images/ogre.jpg"/></span> del usuario, un videojuego puede definirse como una aplicación software que responde a una serie de eventos, redibujando la escena y <span class="hidra-img-in"><img src="images/ogre.jpg"/></span> generando una serie de respuestas adicionales (sonido en los altavoces, vibraciones en dispositivos de control, etc...).</p>
+<p>El redibujado de esta escena debe realizarse lo más rápidamente posible. La capa de aplicación en el despliegue gráfico es una de las actividades que más ciclos de CPU consumen.</p>
+<p>Habitualmente el motor gráfico trabaja con geometría descrita mediante mallas triangulares. Las técnicas empleadas para optimizar el despliegue de esta geometría, junto con las propiedades de materiales, texturas e iluminación, varían dependiendo del tipo de videojuego que se está desarrollando. Por ejemplo, en un simulador de vuelo, el tratamiento que debe darse de la geometría distante (respecto de la posición de la cámara virtual) debe ser diferente que la empleada para optimizar la visualización de interiores en un videojuego de primera persona.</p>
+<p>En esencia, el proceso de rendering de una escena 3D requiere los siguientes elementos:</p>
+<ul>
+<li>Superficies. La geometría de los objetos que forman la escena debe ser definida empleando alguna representación matemática, para su posterior procesamiento por parte del ordenador.</li>
+<li><p>Cámara. La situación del visor debe ser definida mediante un par (posición, rotación) en el espacio 3D. El plano de imagen de esta cámara virtual definirá el resultado del proceso de rendering. Como se muestra en la Figura <a href="#S1FIGrendering">2.1</a>, para imágenes generadas en perspectiva, el volumen de visualización define una pirámide truncada que selecciona los objetos que serán representados en la escena. Esta pirámide se denomina Frustum.</p></li>
+<li>Fuentes de luz. Las fuentes de luz emiten rayos que interactúan con las superficies e impactarán en el plano de imagen. Dependiendo del modo de simulación de estos impactos de luz (de la resolución de la denominada ecuación de render), tendremos diferentes métodos de rendering.</li>
+<li><p>Propiedades de las superficies. En este apartado se incluyen las propiedades de materiales y texturas que describen el modelo de rebote de los fotones sobre las superficies.</p></li>
+</ul>
+<p><div class="hidra-image" id="S1FIGrendering" >
+<img style="width: 50%" src="images/rendering.jpg">
+</div>
+<div class="hidra-image-title">Imagen 2.1: Descripcion general del proceso de rendering</div>
+</p>
+<p>Uno de los principales objetivos en síntesis de imagen es el realismo. En general, según el método empleado para la resolución de la ecuación de render tendremos diferentes niveles de realismo (y diferentes tiempos de cómputo asociados). El principal problema en gráficos en tiempo real es que las imágenes deben ser generadas muy rápidamente. Eso significa, como hemos visto anteriormente, que el motor gráfico dispone de menos de 40 ms para generar cada imagen. Habitualmente este tiempo es incluso menor, ya que es necesario reservar tiempo de CPU para otras tareas como el cálculo de la Inteligencia Artificial, simulación física, sonido...</p>
+<p>Los primeros métodos de sombreado de superficies propuestos por Gouraud y Phong no realizaban ninguna simulación física de la reflexión de la luz, calculando únicamente las contribuciones locales de iluminación. Estos modelos tienen en cuenta la posición de la luz, el observador y el vector normal de la superficie. Pese a su falta de realismo, la facilidad de su cómputo hace que estas aproximaciones sigan siendo ampliamente utilizadas en el desarrollo de videojuegos.</p>
+<p>En 1968 Arthur Appel describió el primer método para generar imágenes por computador lanzando rayos desde el punto de vista del observador. En este trabajo, generaba la imagen resultado en un plotter donde dibujaba punto a punto el resultado del proceso de render. La idea general del método de RayCasting es lanzar rayos desde el plano de imagen, uno por cada píxel, y encontrar el punto de intersección más cercano con los objetos de la escena. La principal ventaja de este método frente a los métodos de tipo scanline que emplean zbuffer es que es posible generar de forma consistente la imagen que represente el mundo 3D, ya que cualquier objeto que pueda ser descrito mediante una ecuación puede ser representado de forma correcta mediante RayCasting.</p>
+<p>El algoritmo original del RayCasting de Appel, fue el precursor del método de RayTracing (Trazado de Rayos) de Whitted de 1980. El método de RayTracing sirvió de base para los principales métodos de síntesis de imagen hiperrealistas que se emplean en la actualidad (Metrópolis, Path Tracing, etc...).</p>
+<p><div class="hidra-image" id="S1FIGraycasting" >
+<img style="width: 100%" src="images/raycasting.jpg">
+</div>
+<div class="hidra-image-title">Imagen 2.2: Diferencias entre las tecnicas de despliegue  interactivas</div>
+</p>
+<p>Como puede verse en la Figura <a href="#S1FIGraycasting">2.2</a>, existen diferencias importantes entre el método de despliegue que implementan las tarjetas aceleradoras 3D (y en general los motores de visualización para aplicaciones interactivas) y el método de RayCasting. El pipeline gráfico de aplicaciones interactivas puede describirse de forma general como el que, a partir de una lista de objetos geo-métricos a representar y, tras aplicar la serie de transformaciones geo-métricas sobre los objetos, la vista y la perspectiva, obtienen una imagen raster dependiente del dispositivo de visualización. En este enfoque, las primitivas se ordenan según la posición de la cámara y sólo las visibles serán dibujadas. Por el contrario, en métodos de síntesis de imagen realista (como la aproximación inicial de RayCasting) calcula los rayos que pasan por cada píxel de la imagen y recorre la lista de objetos, calculando la intersección (si hay alguna) con el objeto más cercano. Una vez obtenido el punto de intersección, se evalúa (empleando un modelo de iluminación) el valor de sombreado correspondiente a ese píxel.</p>
+<p>Estas diferencias quedan igualmente patentes en el tiempo de generación necesario para el cálculo de cada frame. En síntesis de imagen realista el cálculo de un solo fotograma de la animación puede requerir desde varias horas hasta días, empleando computadores de altas prestaciones.</p>
+</body></html>

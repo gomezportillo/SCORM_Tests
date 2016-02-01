@@ -1,8 +1,8 @@
 [testbegin, title=Test en SCORM]
 :¿Y no es mas cierto?
-=Correcto
-~Falso
+=Esta es coreta
+~Esta no es
 :¿Sigue sin serlo?
-~Falso
-=Correcto
+~Esta es falsa
+=Esta es la correcta
 [testend]

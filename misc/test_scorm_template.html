@@ -1,3 +1,4 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -41,7 +42,7 @@ function getAnswer()
                if (document.getElementById("quizForm0").key0b0[i].checked)
                {
                   question0 = document.getElementById("quizForm0").key0b0[i].value;
-                  scorm.SetInteractionValue("cmi.interactions.0.student_response",question0);
+                  scorm.SetInteractionValue("cmi.interactions.0.student_response", question0);
                   break;
                }
             }
@@ -55,7 +56,7 @@ function getAnswer()
                if (document.getElementById("quizForm0").key1b0[i].checked)
                {
                   question1 = document.getElementById("quizForm0").key1b0[i].value;
-                  scorm.SetInteractionValue("cmi.interactions.1.student_response",question1);
+                  scorm.SetInteractionValue("cmi.interactions.1.student_response", question1);
                   break;
                }
             }
@@ -66,21 +67,21 @@ function calcRawScore() {
 
             if (question0 == key0)
             {
-               scorm.SetInteractionValue("cmi.interactions.0.result","correct");
+               scorm.SetInteractionValue("cmi.interactions.0.result", "correct");
                rawScore++;
             }
             else
             {
-               scorm.SetInteractionValue("cmi.interactions.0.result","wrong");
+               scorm.SetInteractionValue("cmi.interactions.0.result", "wrong");
             }
             if (question1 == key1)
             {
-               scorm.SetInteractionValue("cmi.interactions.1.result","correct");
+               scorm.SetInteractionValue("cmi.interactions.1.result", "correct");
                rawScore++;
             }
             else
             {
-               scorm.SetInteractionValue("cmi.interactions.1.result","wrong");
+               scorm.SetInteractionValue("cmi.interactions.1.result", "wrong");
             }
 }
        
