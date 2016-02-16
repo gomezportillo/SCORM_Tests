@@ -1,0 +1,12 @@
+
+                        <div class="iDevice_answer">
+                            <p class="iDevice_answer-field js-required">
+                                <input type="radio" name="key$num_questionb0" id="key$num_questionb0$num_answer" value="$num_answer" />
+                            </p>
+                            <div class="iDevice_answer-content" id="answer-key0b0n">
+                                <a name="answer-key$num_questionb0$num_answer"></a>
+                                <div id="taoptionAnswer$num_answerq$num_questionb0" class="block iDevice_content">
+                                    <p>$Respuesta</p>
+                                </div>
+                            </div>
+                        </div>

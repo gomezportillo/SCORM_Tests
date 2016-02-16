@@ -1,0 +1,6 @@
+                        <h3 class="js-sr-av">Pregunta</h3>
+                          <div id="taquestion$num_questionb0" class="block iDevice_content">
+                            <p>$Statement</p>
+                          </div>
+                        <div class="iDevice_answers">
+                          <h4 class="js-sr-av">Respuestas</h4>

@@ -1,0 +1,13 @@
+scorm.SetInteractionValue("cmi.interactions.$num_iteration.id", "key$num_iterationb0");
+scorm.SetInteractionValue("cmi.interactions.$num_iteration.type", "choice");
+scorm.SetInteractionValue("cmi.interactions.$num_iteration.correct_responses.0.pattern", "$correct_answer");
+
+for (var i=0; i < $num_answers; i++) {
+       if (document.getElementById("quizForm0").key$num_iterationb0[i].checked)
+       {
+          question$num_iteration = document.getElementById("quizForm0").key$num_iterationb0[i].value;
+          scorm.SetInteractionValue("cmi.interactions.$num_iteration.student_response", question$num_iteration);
+          break;
+       }
+}
+console.log("Question$num_iteration: " + question$num_iteration)

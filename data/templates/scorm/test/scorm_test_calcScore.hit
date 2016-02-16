@@ -1,0 +1,38 @@
+function calcScore() {
+        computeTime();
+
+        document.getElementById("quizForm0").submitB.disabled = true;
+
+        getAnswer();
+
+        calcRawScore();
+
+        actualScore = Math.round(rawScore / numQuestions * 100);
+        alert("Su puntuación es " + actualScore + "%")
+
+        scorm.SetScoreRaw(actualScore+"" );
+        scorm.SetScoreMax("100");
+
+        var mode = scorm.GetMode();
+
+        if ( mode != "review"  &&  mode != "browse" ) {
+            if ( actualScore < 50 ) {
+                scorm.SetCompletionStatus("incomplete");
+                scorm.SetSuccessStatus("failed");
+            }
+            else {
+                scorm.SetCompletionStatus("completed");
+                scorm.SetSuccessStatus("passed");
+            }
+
+            scorm.SetExit("");
+        }
+
+        exitPageStatus = true;
+
+        scorm.save();
+
+        scorm.quit();
+
+}
+</script>

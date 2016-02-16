@@ -1,0 +1,8 @@
+if (question$num_iteration == key$num_iteration) {
+    scorm.SetInteractionValue("cmi.interactions.$num_iteration.result", "correct");
+    rawScore++;
+}
+else {
+    scorm.SetInteractionValue("cmi.interactions.$num_iteration.result", "wrong");
+}
+console.log("question$num_iteration == key$num_iteration: " + question$num_iteration +"=="+ key$num_iteration)

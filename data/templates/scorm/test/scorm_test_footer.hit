@@ -1,0 +1,14 @@
+<div class="block iDevice_buttons">
+<p>
+    <input type="submit" name="submitB" value="ENVIAR RESPUESTAS" />
+    <span class="js-hidden js-warning">Habilitar JavaScript</span>
+</p>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="my_js.js"></script>
