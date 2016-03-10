@@ -1,77 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--This is a Reload version 2.5.6 SCORM 1.2 Content Package document-->
 <!--Spawned from the Reload Content Package Generator - http://www.reload.ac.uk-->
-<manifest identifier="eXeewPackage1555f22f721a0b6ac2b5" xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_v1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd" > 
-<metadata> 
- <schema>ADL SCORM</schema> 
- <schemaversion>1.2</schemaversion> 
- <adlcp:location>imslrm.xml</adlcp:location> 
-</metadata>
+<manifest identifier="eXeewPackage1555f22f721a0b6ac2b5" xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_v1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd" >
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>1.2</schemaversion>
+    <adlcp:location>imslrm.xml</adlcp:location>
+  </metadata>
   <organizations default="id" >
     <organization identifier="id" structure="hierarchical">
       <title>Título del libro</title>
-        <item identifier="file-0_.html" isvisible="true" identifierref="file-0_.html">
-          <title>Portada</title>
-  
+      <item identifier="file-0_.html" isvisible="true" identifierref="file-0_.html">
+        <title>Portada</title>
+
+      </item>
+      <item identifier="file-1_.html" isvisible="true" identifierref="file-1_.html">
+        <title>Resumen</title>
+
+      </item>
+      <item identifier="file-2_.html" isvisible="true" identifierref="file-2_.html">
+        <title>Introducción</title>
+
+      </item>
+      <item identifier="test_.html" isvisible="true" identifierref="test_.html">
+        <title>Test</title>
+
+      </item>
+      <item identifier="file-3_.html" isvisible="true" identifierref="file-3_.html">
+        <title>El Pipeline Gráfico</title>
+        <item identifier="file-3_1_.html" isvisible="true" identifierref="file-3_1_.html">
+          <title>Etapa de Aplicación</title>
+
         </item>
-        <item identifier="file-1_.html" isvisible="true" identifierref="file-1_.html">
-          <title>Resumen</title>
-  
+        <item identifier="file-3_2_.html" isvisible="true" identifierref="file-3_2_.html">
+          <title>Etapa de Geometría</title>
+
         </item>
-        <item identifier="file-2_.html" isvisible="true" identifierref="file-2_.html">
-          <title>Introducción</title>
-  
+        <item identifier="file-3_3_.html" isvisible="true" identifierref="file-3_3_.html">
+          <title>Etapa Rasterización</title>
+
         </item>
- 		<item identifier="test_.html" isvisible="true" identifierref="test_.html">
-          <title>Test</title>
-  
+        <item identifier="file-3_4_.html" isvisible="true" identifierref="file-3_4_.html">
+          <title>Proyección en Perspectiva</title>
+
         </item>
-        <item identifier="file-3_.html" isvisible="true" identifierref="file-3_.html">
-          <title>El Pipeline Gráfico</title>
-            <item identifier="file-3_1_.html" isvisible="true" identifierref="file-3_1_.html">
-            <title>Etapa de Aplicación</title>
-    
-          </item>
-          <item identifier="file-3_2_.html" isvisible="true" identifierref="file-3_2_.html">
-            <title>Etapa de Geometría</title>
-    
-          </item>
-          <item identifier="file-3_3_.html" isvisible="true" identifierref="file-3_3_.html">
-            <title>Etapa Rasterización</title>
-    
-          </item>
-          <item identifier="file-3_4_.html" isvisible="true" identifierref="file-3_4_.html">
-            <title>Proyección en Perspectiva</title>
-    
-          </item>
-          </item>
-        <item identifier="file-4_.html" isvisible="true" identifierref="file-4_.html">
-          <title>Arquitectura del motor gráfico</title>
-  
+      </item>
+      <item identifier="file-4_.html" isvisible="true" identifierref="file-4_.html">
+        <title>Arquitectura del motor gráfico</title>
+
+      </item>
+      <item identifier="file-5_.html" isvisible="true" identifierref="file-5_.html">
+        <title>Casos de Estudio</title>
+
+      </item>
+      <item identifier="file-6_.html" isvisible="true" identifierref="file-6_.html">
+        <title>Introducción a OGRE</title>
+        <item identifier="file-6_1_.html" isvisible="true" identifierref="file-6_1_.html">
+          <title>Gestión de Recursos</title>
+
         </item>
-        <item identifier="file-5_.html" isvisible="true" identifierref="file-5_.html">
-          <title>Casos de Estudio</title>
-  
+        <item identifier="file-6_2_.html" isvisible="true" identifierref="file-6_2_.html">
+          <title>Microsoft Windows</title>
+
         </item>
-        <item identifier="file-6_.html" isvisible="true" identifierref="file-6_.html">
-          <title>Introducción a OGRE</title>
-            <item identifier="file-6_1_.html" isvisible="true" identifierref="file-6_1_.html">
-            <title>Gestión de Recursos</title>
-    
-          </item>
-          <item identifier="file-6_2_.html" isvisible="true" identifierref="file-6_2_.html">
-            <title>Microsoft Windows</title>
-    
-          </item>
-          </item>
-        <item identifier="file-7_.html" isvisible="true" identifierref="file-7_.html">
-          <title>Hola Mundo en OGRE</title>
-  
-        </item>
-        <item identifier="file-bib_.html" isvisible="true" identifierref="file-bib_.html">
-          <title>Referencias</title>
-  
-        </item>
+      </item>
+      <item identifier="file-7_.html" isvisible="true" identifierref="file-7_.html">
+        <title>Hola Mundo en OGRE</title>
+
+      </item>
+      <item identifier="file-bib_.html" isvisible="true" identifierref="file-bib_.html">
+        <title>Referencias</title>
+
+      </item>
 
 
 
@@ -82,56 +82,56 @@
       <file href="SCOFunctions.js" />
       <file href="style/style.css" />
 
-    <dependency identifierref="COMMON_FILES"/>
+      <dependency identifierref="COMMON_FILES"/>
     </resource>
     <resource identifier="SCORM_API_wrapper.js" type="webcontent" adlcp:scormtype="sco" href="SCORM_API_wrapper.js">
       <file href="SCORM_API_wrapper.js" />
       <file href="style/style.css" />
 
-    <dependency identifierref="COMMON_FILES"/>
+      <dependency identifierref="COMMON_FILES"/>
     </resource>
     <resource identifier="adlcp_rootv1p2.xsd" type="webcontent" adlcp:scormtype="sco" href="adlcp_rootv1p2.xsd">
       <file href="adlcp_rootv1p2.xsd" />
       <file href="style/style.css" />
 
-    <dependency identifierref="COMMON_FILES"/>
+      <dependency identifierref="COMMON_FILES"/>
     </resource>
     <resource identifier="base.css" type="webcontent" adlcp:scormtype="sco" href="base.css">
       <file href="base.css" />
       <file href="style/style.css" />
 
-    <dependency identifierref="COMMON_FILES"/>
+      <dependency identifierref="COMMON_FILES"/>
     </resource>
     <resource identifier="config.xml" type="webcontent" adlcp:scormtype="sco" href="config.xml">
       <file href="config.xml" />
       <file href="style/style.css" />
 
-    <dependency identifierref="COMMON_FILES"/>
+      <dependency identifierref="COMMON_FILES"/>
     </resource>
     <resource identifier="content.css" type="webcontent" adlcp:scormtype="sco" href="content.css">
       <file href="content.css" />
       <file href="style/style.css" />
 
-    <dependency identifierref="COMMON_FILES"/>
+      <dependency identifierref="COMMON_FILES"/>
     </resource>
     <resource identifier="exe_jquery.js" type="webcontent" adlcp:scormtype="sco" href="exe_jquery.js">
       <file href="exe_jquery.js" />
       <file href="style/style.css" />
 
-    <dependency identifierref="COMMON_FILES"/>
+      <dependency identifierref="COMMON_FILES"/>
     </resource>
     <resource identifier="file-0_.html" type="webcontent" adlcp:scormtype="sco" href="file-0_.html">
       <file href="file-0_.html" />
       <file href="style/style.css" />
       <file href="images/cover.jpg" />
 
-    <dependency identifierref="COMMON_FILES"/>
+      <dependency identifierref="COMMON_FILES"/>
     </resource>
     <resource identifier="file-1_.html" type="webcontent" adlcp:scormtype="sco" href="file-1_.html">
       <file href="file-1_.html" />
       <file href="style/style.css" />
 
-    <dependency identifierref="COMMON_FILES"/>
+      <dependency identifierref="COMMON_FILES"/>
     </resource>
     <resource identifier="file-2_.html" type="webcontent" adlcp:scormtype="sco" href="file-2_.html">
       <file href="file-2_.html" />
@@ -141,14 +141,14 @@
       <file href="images/rendering.jpg" />
       <file href="images/raycasting.jpg" />
 
-    <dependency identifierref="COMMON_FILES"/>
+      <dependency identifierref="COMMON_FILES"/>
     </resource>
 
- 	<resource identifier="test_.html" type="webcontent" adlcp:scormtype="sco" href="test_.html">
+    <resource identifier="test_.html" type="webcontent" adlcp:scormtype="sco" href="test_.html">
       <file href="test_.html" />
       <file href="style/style.css" />
 
-    <dependency identifierref="COMMON_FILES"/>
+      <dependency identifierref="COMMON_FILES"/>
     </resource>
 
     <resource identifier="file-3_.html" type="webcontent" adlcp:scormtype="sco" href="file-3_.html">
@@ -157,27 +157,27 @@
       <file href="images/pipeline.jpg" />
       <file href="images/sistemascoordenadas.jpg" />
 
-    <dependency identifierref="COMMON_FILES"/>
+      <dependency identifierref="COMMON_FILES"/>
     </resource>
     <resource identifier="file-3_1_.html" type="webcontent" adlcp:scormtype="sco" href="file-3_1_.html">
       <file href="file-3_1_.html" />
       <file href="style/style.css" />
 
-    <dependency identifierref="COMMON_FILES"/>
+      <dependency identifierref="COMMON_FILES"/>
     </resource>
     <resource identifier="file-3_2_.html" type="webcontent" adlcp:scormtype="sco" href="file-3_2_.html">
       <file href="file-3_2_.html" />
       <file href="style/style.css" />
       <file href="images/coordvis.jpg" />
 
-    <dependency identifierref="COMMON_FILES"/>
+      <dependency identifierref="COMMON_FILES"/>
     </resource>
     <resource identifier="file-3_3_.html" type="webcontent" adlcp:scormtype="sco" href="file-3_3_.html">
       <file href="file-3_3_.html" />
       <file href="style/style.css" />
       <file href="images/recorte.jpg" />
 
-    <dependency identifierref="COMMON_FILES"/>
+      <dependency identifierref="COMMON_FILES"/>
     </resource>
     <resource identifier="file-3_4_.html" type="webcontent" adlcp:scormtype="sco" href="file-3_4_.html">
       <file href="file-3_4_.html" />
@@ -187,111 +187,111 @@
       <file href="images/eq225a3cd9-02f4-462b-bfe2-0e8e72bde2e7.png" />
       <file href="images/eq8d586ce3-5a62-4770-a104-0c82819036e1.png" />
 
-    <dependency identifierref="COMMON_FILES"/>
+      <dependency identifierref="COMMON_FILES"/>
     </resource>
     <resource identifier="file-4_.html" type="webcontent" adlcp:scormtype="sco" href="file-4_.html">
       <file href="file-4_.html" />
       <file href="style/style.css" />
 
-    <dependency identifierref="COMMON_FILES"/>
+      <dependency identifierref="COMMON_FILES"/>
     </resource>
     <resource identifier="file-5_.html" type="webcontent" adlcp:scormtype="sco" href="file-5_.html">
       <file href="file-5_.html" />
       <file href="style/style.css" />
       <file href="images/capturasmotores.jpg" />
 
-    <dependency identifierref="COMMON_FILES"/>
+      <dependency identifierref="COMMON_FILES"/>
     </resource>
     <resource identifier="file-6_.html" type="webcontent" adlcp:scormtype="sco" href="file-6_.html">
       <file href="file-6_.html" />
       <file href="style/style.css" />
       <file href="images/ogre.jpg" />
 
-    <dependency identifierref="COMMON_FILES"/>
+      <dependency identifierref="COMMON_FILES"/>
     </resource>
     <resource identifier="file-6_1_.html" type="webcontent" adlcp:scormtype="sco" href="file-6_1_.html">
       <file href="file-6_1_.html" />
       <file href="style/style.css" />
 
-    <dependency identifierref="COMMON_FILES"/>
+      <dependency identifierref="COMMON_FILES"/>
     </resource>
     <resource identifier="file-6_2_.html" type="webcontent" adlcp:scormtype="sco" href="file-6_2_.html">
       <file href="file-6_2_.html" />
       <file href="style/style.css" />
 
-    <dependency identifierref="COMMON_FILES"/>
+      <dependency identifierref="COMMON_FILES"/>
     </resource>
     <resource identifier="file-7_.html" type="webcontent" adlcp:scormtype="sco" href="file-7_.html">
       <file href="file-7_.html" />
       <file href="style/style.css" />
 
-    <dependency identifierref="COMMON_FILES"/>
+      <dependency identifierref="COMMON_FILES"/>
     </resource>
     <resource identifier="file-bib_.html" type="webcontent" adlcp:scormtype="sco" href="file-bib_.html">
       <file href="file-bib_.html" />
       <file href="style/style.css" />
 
-    <dependency identifierref="COMMON_FILES"/>
+      <dependency identifierref="COMMON_FILES"/>
     </resource>
     <resource identifier="icon_question.gif" type="webcontent" adlcp:scormtype="sco" href="icon_question.gif">
       <file href="icon_question.gif" />
       <file href="style/style.css" />
 
-    <dependency identifierref="COMMON_FILES"/>
+      <dependency identifierref="COMMON_FILES"/>
     </resource>
     <resource identifier="ims_xml.xsd" type="webcontent" adlcp:scormtype="sco" href="ims_xml.xsd">
       <file href="ims_xml.xsd" />
       <file href="style/style.css" />
 
-    <dependency identifierref="COMMON_FILES"/>
+      <dependency identifierref="COMMON_FILES"/>
     </resource>
     <resource identifier="imscp_rootv1p1p2.xsd" type="webcontent" adlcp:scormtype="sco" href="imscp_rootv1p1p2.xsd">
       <file href="imscp_rootv1p1p2.xsd" />
       <file href="style/style.css" />
 
-    <dependency identifierref="COMMON_FILES"/>
+      <dependency identifierref="COMMON_FILES"/>
     </resource>
     <resource identifier="imslrm.xml" type="webcontent" adlcp:scormtype="sco" href="imslrm.xml">
       <file href="imslrm.xml" />
       <file href="style/style.css" />
 
-    <dependency identifierref="COMMON_FILES"/>
+      <dependency identifierref="COMMON_FILES"/>
     </resource>
     <resource identifier="imsmanifest.xml" type="webcontent" adlcp:scormtype="sco" href="imsmanifest.xml">
       <file href="imsmanifest.xml" />
       <file href="style/style.css" />
 
-    <dependency identifierref="COMMON_FILES"/>
+      <dependency identifierref="COMMON_FILES"/>
     </resource>
     <resource identifier="imsmd_rootv1p2p1.xsd" type="webcontent" adlcp:scormtype="sco" href="imsmd_rootv1p2p1.xsd">
       <file href="imsmd_rootv1p2p1.xsd" />
       <file href="style/style.css" />
 
-    <dependency identifierref="COMMON_FILES"/>
+      <dependency identifierref="COMMON_FILES"/>
     </resource>
     <resource identifier="my_js.js" type="webcontent" adlcp:scormtype="sco" href="my_js.js">
       <file href="my_js.js" />
       <file href="style/style.css" />
 
-    <dependency identifierref="COMMON_FILES"/>
+      <dependency identifierref="COMMON_FILES"/>
     </resource>
     <resource identifier="nav.css" type="webcontent" adlcp:scormtype="sco" href="nav.css">
       <file href="nav.css" />
       <file href="style/style.css" />
 
-    <dependency identifierref="COMMON_FILES"/>
+      <dependency identifierref="COMMON_FILES"/>
     </resource>
 
-  <resource identifier="COMMON_FILES" type="webcontent" adlcp:scormtype="asset">
-    <file href="content.css"/>
-    <file href="my_js.js"/>
-    <file href="nav.css"/>
-    <file href="icon_question.gif"/>
-    <file href="config.xml"/>
-    <file href="base.css"/>
-    <file href="SCORM_API_wrapper.js"/>
-    <file href="SCOFunctions.js"/>
-    <file href="exe_jquery.js"/>
-  </resource>
+    <resource identifier="COMMON_FILES" type="webcontent" adlcp:scormtype="asset">
+      <file href="content.css"/>
+      <file href="my_js.js"/>
+      <file href="nav.css"/>
+      <file href="icon_question.gif"/>
+      <file href="config.xml"/>
+      <file href="base.css"/>
+      <file href="SCORM_API_wrapper.js"/>
+      <file href="SCOFunctions.js"/>
+      <file href="exe_jquery.js"/>
+    </resource>
   </resources>
 </manifest>
